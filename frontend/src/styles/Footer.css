@@ -1,0 +1,146 @@
+/* filepath: d:\raghulLivesHere\employee-management\frontend\src\styles\Footer.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.footer {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  padding-top: 3rem;
+  margin-top: 2rem;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.footer-logo {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 2rem;
+}
+
+.footer-logo h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--primary-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-logo p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 2;
+  justify-content: space-around;
+}
+
+.footer-column {
+  margin-bottom: 2rem;
+  min-width: 150px;
+}
+
+.footer-column h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.footer-column h4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  height: 2px;
+  background: var(--primary-gradient);
+  border-radius: 2px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-column a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.footer-column a:hover {
+  color: var(--text-primary);
+  transform: translateX(3px);
+  display: inline-block;
+}
+
+.footer-bottom {
+  background-color: var(--bg-secondary);
+  padding: 1.25rem 0;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+  
+  .footer-logo {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-logo h3 {
+    justify-content: center;
+  }
+  
+  .footer-links {
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-column h4::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
